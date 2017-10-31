@@ -8,6 +8,7 @@ def find_files(url):
 
     for a in soup.find_all('a'):
         yield a['href']
-
+#getting from medicare website
 for link in find_files("http://10.66.28.202:8230"):
     print(link)
+#maybe like Craig said maybe introduce a delay
